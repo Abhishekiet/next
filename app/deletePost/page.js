@@ -12,6 +12,7 @@ const deletePage=()=>{
 
     const handleDelete=async(id)=>{
         const res = await axios.delete( `api/posts/${id}` )
+        setId("")
         if( res.status === 200 ){
             alert( 'Post Deleted Successfully ' )
         }
