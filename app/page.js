@@ -12,6 +12,7 @@ const App=()=>{
 
   const postdata=async()=>{
     const res = await axios.post( '/api/posts', state )
+    setState("")
     if ( res.status === 200 ){
       alert( 'Successfully Updated' )
     }
