@@ -14,7 +14,7 @@ const App=()=>{
     const res = await axios.post( '/api/posts', state )
     setState("")
     if ( res.status === 200 ){
-      alert( 'Successfully Updated' )
+      alert( 'Data Updated Successfully' )
     }
   }
 
